@@ -32,17 +32,7 @@ def quick_sort(lista:list, indice_inicio:int, indice_final:int) -> None:
 
 
 # PROBANDO FUNCIONALIDAD DE QUICK SORT
-def probar_quick_sort(lista:list, nombre_lista:str) -> None:
-    print(f'Ordenando Lista: ({nombre_lista})')
-    print(f'Antes de Quick Sort: {lista}')
-    quick_sort(lista, 0, len(lista) - 1)
-    print(f'Después de Quick Sort {lista}')
-    print()
-
-lista_a = [1, 2, 3, 4, 5]
-lista_b = [5, 4, 3, 2, 1]
-lista_c = [4, 1, 5, 2, 3]
-
-probar_quick_sort(lista_a, 'Lista ya ordenada')
-probar_quick_sort(lista_b, 'Lista al revés')
-probar_quick_sort(lista_c, 'Lista sin ningún orden')
+lista = [34, 7, 15, 9, 29, 1, 87, 45, 17, 10]
+print('Lista antes de ordenar:', lista)
+quick_sort(lista, 0, len(lista) - 1)
+print('Lista después de ordenar:', lista)
